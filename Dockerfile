@@ -13,8 +13,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Скопіювати увесь код застосунку в контейнер
 COPY . .
 
-# Відкрити порт, на якому працює FastAPI (за замовчуванням 8000)
+# Відкрити порт, на якому працює FastAPI
 EXPOSE 8000
 
-# Команда запуску FastAPI-застосунку через Uvicorn
+# Команда запуску FastAPI
 CMD ["python", "main.py"]
